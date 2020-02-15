@@ -1,15 +1,17 @@
-from glob import glob
-from sys import argv
-from os import chdir
-
 from datetime import datetime
 from itertools import dropwhile, takewhile
 
-from io import BytesIO
+import instaloader
 
-from requests import get
-from PIL import Image, ImageDraw
+L = instaloader.Instaloader()
 
-from instaloader import Instaloader, Post, Profile, load_structure_from_file
+posts = L.get_hashtag_posts('eatla')
+# or
+# posts = instaloader.Profile.from_username(L.context, PROFILE).get_posts()
 
-print('done')
+SINCE = datetime(2020, 2, 7, 0, 0, 0)
+UNTIL = datetime(2020, 2, 8, 0, 0, 0)
+
+for post in takewhile(lambda p: p.date > UNTIL, dropwhile(lambda p: p.date > SINCE, posts)):
+    print(post.date)
+    L.download_post(post, '#eatla')
