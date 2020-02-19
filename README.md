@@ -1,5 +1,7 @@
 # Web Scraping from IG
-
+<br>
+Credit to InstaLoader IG Scraper Python Tool
+<br>
 ### Create an Instaloader() object
 `loader = Instaloader()`
 
@@ -7,6 +9,7 @@ Functions we can use to scrape:
 <br><br>
 BY LOCATION
 <br>*Note: need IG location ID (see database of IDs in LA)
+<br>
 `loader.download_location(362629379, max_count=30, post_filter=None, fast_update=True)`
 
 BY HASHTAG
