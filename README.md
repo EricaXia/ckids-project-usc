@@ -16,3 +16,10 @@ BY HASHTAG
 <br>
 fast_update set to True so we don't donwload duplicates
 <br>TODO: Look into how to modify post_filter argument so we can filter hashtags by location
+
+<br>
+### LINKS
+<br>
+[See here]
+(https://instaloader.github.io/as-module.html#posts)
+For info on all properties/methods of the Post object
