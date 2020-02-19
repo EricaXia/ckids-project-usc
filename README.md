@@ -1,7 +1,5 @@
-# Web Scraping from IG
-<br>
-Credit to InstaLoader IG Scraper Python Tool
-<br>
+# Web Scraping from IG (using Instaloader Scraper Tool)
+
 ### Create an Instaloader() object
 `loader = Instaloader()`
 
