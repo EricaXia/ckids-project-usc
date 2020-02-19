@@ -1,2 +1,0 @@
-Manhattan, New York
-https://maps.google.com/maps?q=40.7779,-73.9675&ll=40.7779,-73.9675
