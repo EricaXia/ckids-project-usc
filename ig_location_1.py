@@ -20,3 +20,11 @@ L.download_location("1865514327051885",
                     # filter by specific hashtag in post's caption
                     post_filter=lambda post: "food" in post.caption_hashtags,
                     fast_update=True)
+
+
+""" 
+To improve on:
+1. Get only one photo per post, not all of them?
+2. Better way to filter out non-food posts
+3. Get other relevant data
+ """
