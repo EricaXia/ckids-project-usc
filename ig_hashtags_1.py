@@ -4,8 +4,8 @@ import itertools
 L = instaloader.Instaloader()
 L.login('musketeers1128@gmail.com', 'EvOu7CR7Iq2V')
 
-hashtags = ["eatla",  "lafoodie", "laeats", "dinela",
-            "eatla", "eaterla", "lafood", "dtlafood"]
+hashtags = ["lafoodie", "laeats", "dinela",
+            "eaterla", "lafood"]
 
 
 for h in hashtags:
