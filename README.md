@@ -15,7 +15,7 @@ BY HASHTAG
 <br>
 <br>
 fast_update set to True so we don't donwload duplicates
-<br>TODO: Look into how to modify post_filter argument so we can filter hashtags by location
+<br>We can modify post_filter argument with lambda functions, so we can filter hashtags by location (and other filters when needed)
 
 <br>
 ### LINKS
