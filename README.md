@@ -6,7 +6,7 @@
 Functions we can use to scrape:
 <br><br>
 BY LOCATION
-<br>*Note: need IG location ID (see database of IDs in LA)
+<br>*Note: need IG location ID (see database of IDs in LA https://uploads-ssl.webflow.com/5bf6aaab4fac80dbdf6a9b13/5d309a17b0d13061efe289d5_A%20Complete%20List%20of%20Instagram%20Location%20IDs%20in%20Los%20Angeles%2C%20California%2C%20USA.pdf)
 <br>
 `loader.download_location(362629379, max_count=30, post_filter=None, fast_update=True)`
 
