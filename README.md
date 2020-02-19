@@ -20,6 +20,5 @@ fast_update set to True so we don't donwload duplicates
 <br>
 ### LINKS
 <br>
-[See here]
-(https://instaloader.github.io/as-module.html#posts)
+See here https://instaloader.github.io/as-module.html#posts
 For info on all properties/methods of the Post object
