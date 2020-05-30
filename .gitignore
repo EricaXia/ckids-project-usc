@@ -1,0 +1,7 @@
+venv
+*.pyc
+.env
+.ipynb_checkpoints/*
+.vscode/*
+*.code-workspace
+.history/
