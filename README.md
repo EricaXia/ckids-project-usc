@@ -1,27 +1,17 @@
-# Web Scraping from IG (using Instaloader Scraper Tool)
+# Web Scraping Instagram Posts
 
-### Create an Instaloader() object
-`loader = Instaloader()`
+## Workflow:
+1. Download and make use of [Instaloader](https://instaloader.github.io/) Python tool. Instaloader has two options for downloading:
+  - Command line utility (I primarily used this)
+  - As an imported Python package
+2. Install the tool [as per instructions](https://instaloader.github.io/installation.html#install). If you are using Windows, you can download the standalone program [here](https://github.com/instaloader/instaloader/releases).
+3. You can verify if it was installed properly by running `instaloader --help` within command line terminal.
+3. Posts can be downloaded by specifying options to the command line tool. For instance, 
+`instaloader --login="YOUR-INSTAGRAM-EMAIL-HERE" --password="YOUR-INSTAGRAM-PASSWORD" --no-videos --geotags --comments --no-compress-json --post-filter="datetime(2020, 2, 1) <= date_utc <= datetime(2020, 4, 1)" --count=5000 --request-timeout=300 #burger`
 
-Functions we can use to scrape:
-<br><br>
-BY LOCATION
-<br>*Note: need IG location ID
-<br>
-[see database of IDs in LA](https://uploads-ssl.webflow.com/5bf6aaab4fac80dbdf6a9b13/5d309a17b0d13061efe289d5_A%20Complete%20List%20of%20Instagram%20Location%20IDs%20in%20Los%20Angeles%2C%20California%2C%20USA.pdf)
-<br>
-`loader.download_location(362629379, max_count=30, post_filter=None, fast_update=True)`
+Will download all posts containing the hashtag "#burger" within the date range 2/1/2020 to 4/1/2020 with an upper limit of 5000 posts.
 
-BY HASHTAG
-<br>
-`loader.download_hashtag('food', max_count=30), post_filter=None, fast_update=True)`
-<br>
-<br>
-fast_update set to True so we don't donwload duplicates
-<br>We can modify post_filter argument with lambda functions, so we can filter hashtags by location (and other filters when needed)
 
-<br>
-### LINKS
-<br>
-See here https://instaloader.github.io/as-module.html#posts
-For info on all properties/methods of the Post object
+
+## Documentation
+Please see the Instaloader website for the full documentation and usage guide.
