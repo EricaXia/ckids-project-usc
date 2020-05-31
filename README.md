@@ -9,9 +9,7 @@
 
 3. You can verify if it was installed properly by running `instaloader --help` within your command line terminal.
 
-4. Posts can be downloaded by specifying options to the command line tool. For instance, 
-
-<br>
+4. Posts can be downloaded by specifying options to the command line tool. For instance, typing the command 
 
 `instaloader --login="YOUR-INSTAGRAM-EMAIL-HERE" --password="YOUR-INSTAGRAM-PASSWORD" --no-videos --geotags --comments --no-compress-json --post-filter="datetime(2020, 2, 1) <= date_utc <= datetime(2020, 4, 1)" --count=5000 --request-timeout=300 #burger`
 
